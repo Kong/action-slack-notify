@@ -7,7 +7,7 @@ runs:
       - name: "Slack-Markdown Conversion"
         if: env.SLACKIFY_MARKDOWN == 'true'
         id: slackify
-        uses: LoveToKnow/slackify-markdown-action@v1.0.2
+        uses: LoveToKnow/slackify-markdown-action@v1.1.0
         with:
           text: ${{ env.SLACK_MESSAGE }}
 
